@@ -22,6 +22,12 @@ public class Gimnasio {
         Usuarios.add(nombreUsuario);
         System.out.println("Usuario " + usuario + " registrado en el gimnasio " + nombre + ".");
     }
+    public void mostrarUsuariosRegistrados() {
+        System.out.println("Usuarios registrados:");
+        for (String usuario : Usuarios) {
+            System.out.println(usuario);
+        }
+    }
 
     public static void main(String[] args) {
         Gimnasio miGimnasio = new Gimnasio("FitLife Gym");
