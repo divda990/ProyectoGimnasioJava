@@ -30,8 +30,43 @@ public class Gimnasio {
     }
 
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
         Gimnasio miGimnasio = new Gimnasio("FitLife Gym");
-        miGimnasio.mostrarActividades();
+        int menu;
+      
         miGimnasio.registrarUsuario("Juan Perez");
     }
+     do {
+            System.out.println();
+            System.out.println(" MENU ");
+            System.out.println("--------------------");
+            System.out.println(" 1- Mostrar actividades: ");
+            System.out.println(" 2- Registrar usuario:");
+            System.out.println(" 3- Mostrar usuarios registrados");
+            System.out.println(" 0- Salir");
+            System.out.print(" Introduzca la opción deseada:");
+            menu = s.nextInt();
+            s.nextLine();
+
+            switch (menu) {
+                case 1:
+                    miGimnasio.mostrarActividades();
+                    break;
+                case 2:
+                    System.out.print("Ingrese el nombre del usuario: ");
+                    String nombreUsuario = s.nextLine();
+                    miGimnasio.registrarUsuario(nombreUsuario);
+                    break;
+                case 3:
+                    miGimnasio.mostrarUsuariosRegistrados();
+                    break;
+                case 0:
+                    System.out.print(" Salir ");
+                    break;
+                default:
+                    System.out.print(" Opción no válida");
+
+            }
+        } while (menu != 0);
+    
 }
