@@ -1,11 +1,12 @@
 # ProyectoGimnasioJava
-Repositorio base para actividad práctica con GitHub y Java
 
-# Descripción General de las Mejoras.
+
+
+# Descripción General de las mejoras.
 
 # Justificación de los cambios realizados.
 
-Instrucciones claras para entender y usar las nuevas funcionalidades.
+# Instrucciones claras para entender y usar las nuevas funcionalidades.
 
 
 
