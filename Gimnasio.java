@@ -1,9 +1,14 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class Gimnasio {
     private String nombre;
     private String[] actividades = {"Yoga", "Boxeo", "Funcional"};
+    private ArrayList<String> Usuarios;
 
     public Gimnasio(String nombre) {
         this.nombre = nombre;
+        this.Usuarios = new ArrayList<>();
     }
 
     public void mostrarActividades() {
@@ -14,6 +19,7 @@ public class Gimnasio {
     }
 
     public void registrarUsuario(String usuario) {
+        Usuarios.add(nombreUsuario);
         System.out.println("Usuario " + usuario + " registrado en el gimnasio " + nombre + ".");
     }
 
